@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 50vw;
+    background-color: white !important;
+    padding: 20px;
+    margin: 20px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 12px 20px;
+}
+
+p{
+    font-size:20px;
+}
+
+::-webkit-scrollbar{
+    color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#FFFFFF,#6284FF,#7508ba);
+    border-radius: 20px;
+    
+}

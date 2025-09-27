@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(128, 128, 128, 0.902);
+    height: 100vh;
+    position: relative;
+}
+
+.clip {
+    height: 100%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    object-fit: contain;
+    transition: all 0.5s;
+}
+
+img {
+    width: 80vw;
+    height: 80%;
+    object-fit: cover;
+}
+
+.clip1 {
+    clip-path: polygon(50% 0%, 34% 32%, 25% 50%, 7% 14%, 0 0);
+}
+
+.clip2 {
+    clip-path: polygon(50% 0%, 100% 0%, 84% 32%, 75% 50%, 66% 32%);
+}
+
+.clip3 {
+    clip-path: polygon(25% 50%, 51% 50%, 51% 100%, 0% 100%, 0% 0%);
+}
+
+.clip4 {
+    clip-path: polygon(75% 50%, 100% 0, 100% 100%, 50% 100%, 50% 50%);
+}
+
+.clip5 {
+    clip-path: polygon(50% 0%, 64% 28%, 75% 50%, 25% 50%, 37% 26%);
+}
+
+/* hover */
+.container .clip:hover{
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+    z-index: 1;
+} 
