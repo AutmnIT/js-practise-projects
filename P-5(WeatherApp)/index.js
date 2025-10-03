@@ -2,7 +2,7 @@
 
 
 async function checkWeather(city) {
-    const WEATHER_API="053377386a91e08bd3e7001ade2f8a0f";
+    const WEATHER_API=""; //add your web-api
     // let url = 
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}` +`&appid=${WEATHER_API}`+ `&units=metric`);
     const data = await response.json();
