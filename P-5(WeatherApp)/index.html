@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
-  <title>Weather App</title>
-</head>
-<body class="flex justify-center items-center min-h-screen bg-gray-900">
-
-  <!-- Card -->
-  <div class="bg-gradient-to-br from-teal-400 to-blue-500 rounded-3xl p-6 w-80 shadow-lg text-white">
-    
-    <!-- Search -->
-    <div class="flex items-center bg-white rounded-full px-4 py-2 mb-6">
-      <input type="text" placeholder="Search city"
-             class="flex-1 outline-none bg-transparent text-gray-700 placeholder-gray-500">
-      <img src="./assets/search.png" alt="search" class="w-5 h-5 cursor-pointer">
-    </div>
-
-    <!-- Middle Section -->
-    <div class="flex flex-col items-center text-center space-y-3">
-      <div class="icon">
-        <img src="./assets/sunny.png" alt="sunny" class="w-20">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Weather App</title>
+  </head>
+  <body class="flex justify-center items-center min-h-screen bg-gray-900">
+    <!-- Card -->
+    <div
+      class="bg-gradient-to-br from-teal-400 to-blue-500 rounded-3xl p-6 w-80 shadow-lg text-white"
+    >
+      <!-- Search -->
+      <div class="flex items-center bg-white rounded-full px-4 py-2 mb-6">
+        <input
+          type="text"
+          placeholder="Search city"
+          class="flex-1 outline-none bg-transparent text-gray-700 placeholder-gray-500"
+        />
+        <img
+          src="./assets/search.png"
+          alt="search"
+          class="search h-5 cursor-pointer"
+        />
       </div>
-      <div class="temp text-4xl font-bold">
-        22°C
-      </div>
-      <div class="city text-xl font-medium">
-        Bengaluru
-      </div>
-    </div>
 
-    <!-- Details -->
-    <div class="flex justify-between items-center mt-6 px-2">
-      <!-- Humidity -->
-      <div class="flex items-center space-x-2">
-        <img src="./assets/humidity.png" alt="humidity" class="w-6 h-6">
-        <div>
-          <div class="text-sm font-semibold">53%</div>
-          <div class="text-xs">Humidity</div>
+      <!-- Middle Section -->
+      <div class="flex flex-col items-center text-center space-y-3">
+        <div class="">
+          <img src="./assets/clear.png" alt="sunny" class="weatherIcon w-20" />
+        </div>
+        <div class=" text-4xl font-bold">
+          <span class="temp">0</span>°C
+        </div>
+        <div class="city text-xl font-medium">City</div>
+      </div>
+
+      <!-- Details -->
+      <div class="flex justify-between items-center mt-6 px-2">
+        <!-- Humidity -->
+        <div class="flex items-center space-x-2">
+          <img src="./assets/humidity.png" alt="humidity" class="w-6 h-6" />
+          <div>
+            <div class="text-sm font-semibold"><span class="humidity">0</span>%</div>
+            <div class="text-xs">Humidity</div>
+          </div>
+        </div>
+        <!-- Wind -->
+        <div class="flex items-center space-x-2">
+          <img src="./assets/wind.png" alt="wind" class="w-6 h-6" />
+          <div>
+            <div class="text-sm font-semibold"><span class="wind">0</span> km/h</div>
+            <div class="text-xs">Wind Speed</div>
+          </div>
         </div>
       </div>
-      <!-- Wind -->
-      <div class="flex items-center space-x-2">
-        <img src="./assets/wind.png" alt="wind" class="w-6 h-6">
-        <div>
-          <div class="text-sm font-semibold">5.66 km/h</div>
-          <div class="text-xs">Wind Speed</div>
-        </div>
-      </div>
     </div>
-  </div>
-</body>
+  
+  </body>
+  <script src="index.js"></script>
 </html>
